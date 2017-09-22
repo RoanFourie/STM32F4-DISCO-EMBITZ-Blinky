@@ -1,7 +1,28 @@
 # Blink the 4 LEDs on the STM32F407-Discovery board  
 
-Getting started with the [STM32F407-Discovery](https://stm32f4-discovery.net/stm32f4-links/) board using the [EmBitz IDE](https://www.embitz.org/).   Blinking the 4 LEDs [modified this article](http://www.firmcodes.com/stm32f407-discovery-gpio-tu).   
+When the button is not pressed:  
+- The Blue and Green LEDs are off;  
+- The Red LED stays on;  
+- The Orange LED blinks.  
+When the button is pressed:  
+- The Red and Orange LEDs are off;  
+- The Green button stays on;  
+- The Blue button blinks.  
+
+Getting started with the [STM32F407-Discovery](https://stm32f4-discovery.net/stm32f4-links/) board using the [EmBitz IDE](https://www.embitz.org/).   Blinking the 4 LEDs [modified and used this article](/User Manuals/isildak_en.pdf) and [used this article](http://www.firmcodes.com/stm32f407-discovery-gpio-tu) to get it working.   
 Flashed using [ST-Link Utility](http://www.st.com/en/development-tools/stsw-link004.html). 
+
+>I left all the autoconfigured standard libraries so the project could be used as a template.  
+
+---  
+Hex file for flashing to board:  
+/STM32F407Disco/bin/Release/STM32F407Disco.hex  
+Manually added these files:  
+/STM32F407Disco/Delay/fm_stm32f4_Delay.c  
+/STM32F407Disco/Delay/fm_stm32f4_Delay.h  
+/STM32F407Disco/LED/fm_stm32f4_led.c  
+/STM32F407Disco/LED/fm_stm32f4_led.h  
+
 
 ---
 

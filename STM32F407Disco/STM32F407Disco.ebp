@@ -83,9 +83,6 @@
 			<Add directory=".\SPL\src" />
 			<Add directory=".\LED" />
 			<Add directory=".\Delay" />
-			<Add directory="roan\defines" />
-			<Add directory="roan\tm_stm32f4_gpio" />
-			<Add directory="roan\tm_stm32f4_disco" />
 		</Compiler>
 		<Linker>
 			<Add option="-eb_lib=n" />
@@ -109,15 +106,6 @@
 		</Unit>
 		<Unit filename="LED\fm_stm32f4_led.h" />
 		<Unit filename="readme.txt" />
-		<Unit filename="roan\defines\defines.h" />
-		<Unit filename="roan\tm_stm32f4_disco\tm_stm32f4_disco.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="roan\tm_stm32f4_disco\tm_stm32f4_disco.h" />
-		<Unit filename="roan\tm_stm32f4_gpio\tm_stm32f4_gpio.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="roan\tm_stm32f4_gpio\tm_stm32f4_gpio.h" />
 		<Unit filename="SPL\inc\misc.h" />
 		<Unit filename="SPL\inc\stm32f4xx_adc.h" />
 		<Unit filename="SPL\inc\stm32f4xx_can.h" />

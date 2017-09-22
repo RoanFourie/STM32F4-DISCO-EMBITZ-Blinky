@@ -5,19 +5,19 @@
 **
 **********************************************************************/
 /*
-   Last committed:     $Revision: 00 $
-   Last changed by:    $Author: $
-   Last changed date:  $Date:  $
-   ID:                 $Id:  $
+   AUTHOR:          Roan Fourie
+   DATE CREATED:    2017-Week-38
+   DATE CHANGED:    2017-Week-38
 
 **********************************************************************/
-#include "stm32f4xx_conf.h"
 
 #include "stm32f4xx.h"
 #include "stm32f4xx_rcc.h"
 #include "stm32f4xx_gpio.h"
 #include "fm_stm32f4_led.h"
 #include "fm_stm32f4_delay.h"
+
+
 static void button_setup(void)
 {
     GPIO_InitTypeDef  GPIO_InitStructure;
@@ -34,6 +34,7 @@ static void button_setup(void)
     GPIO_Init(GPIOA, &GPIO_InitStructure);
 }
 
+
 int main(void)
 {
     // initialize the system frequency
@@ -42,19 +43,19 @@ int main(void)
     delay_init();
     // all LED initialize
     FM_Led_Init();
-
+    // Initialize the button
     button_setup();
-    //volatile int i;
+
     while (1) {
         if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)) {
             FM_Led_On(LED_GREEN);
-            FM_Led_On(LED_BLUE);
+            FM_Led_Toggle(LED_BLUE);
             FM_Led_Off(LED_ORANGE);
             FM_Led_Off(LED_RED);
         } else {
             FM_Led_Off(LED_GREEN);
             FM_Led_Off(LED_BLUE);
-            FM_Led_On(LED_ORANGE);
+            FM_Led_Toggle(LED_ORANGE);
             FM_Led_On(LED_RED);
         }
         // Delay for 1sec
