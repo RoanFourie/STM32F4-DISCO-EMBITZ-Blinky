@@ -1,4 +1,5 @@
 Date: 2017-Week-38  
+Status: Working  
 
 # Blink the 4 LEDs and read the User Button on the STM32F4-Discovery board (STM32F407VGT6) 
 
