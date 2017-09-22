@@ -9,7 +9,7 @@ When the button is pressed:
 - The Green button stays on;  
 - The Blue button blinks.  
 
-Getting started with the [STM32F407-Discovery](https://stm32f4-discovery.net/stm32f4-links/) board using the [EmBitz IDE](https://www.embitz.org/).   Blinking the 4 LEDs [modified and used this article](/User Manuals/isildak_en.pdf) and [used this article](http://www.firmcodes.com/stm32f407-discovery-gpio-tu) to get it working.   
+Getting started with the [STM32F407-Discovery](https://stm32f4-discovery.net/stm32f4-links/) board using the [EmBitz IDE](https://www.embitz.org/).   Blinking the 4 LEDs [modified and used this article](User Manuals/isildak_en.pdf) and [used this article](http://www.firmcodes.com/stm32f407-discovery-gpio-tu) to get it working.   
 Flashed using [ST-Link Utility](http://www.st.com/en/development-tools/stsw-link004.html). 
 
 >I left all the autoconfigured standard libraries so the project could be used as a template.  
