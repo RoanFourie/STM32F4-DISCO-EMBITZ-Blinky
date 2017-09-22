@@ -1,23 +1,34 @@
-# Blink the 4 LEDs on the STM32F407-Discovery board  
+Date: 2017-Week-38  
 
+# Blink the 4 LEDs and read the User Button on the STM32F4-Discovery board (STM32F407VGT6) 
+
+---
+## Introduction:  
+Getting started with the [STM32F4-Discovery](https://stm32f4-discovery.net/stm32f4-links/) board using the free [EmBitz IDE](https://www.embitz.org/) on Windows.   
+To blink the 4 LEDs and read the User Button [modified and used this article](./User Manuals/isildak_en.pdf) and [used this article](http://www.firmcodes.com/stm32f407-discovery-gpio-tu) to get it working.   
+Flashed firmware hex file using [ST-Link Utility](http://www.st.com/en/development-tools/stsw-link004.html). 
+
+---
+## Operation:  
 When the button is not pressed:  
 - The Blue and Green LEDs are off;  
 - The Red LED stays on;  
-- The Orange LED blinks.  
+- The Orange LED blinks.   
+
 When the button is pressed:  
 - The Red and Orange LEDs are off;  
 - The Green button stays on;  
 - The Blue button blinks.  
 
-Getting started with the [STM32F407-Discovery](https://stm32f4-discovery.net/stm32f4-links/) board using the [EmBitz IDE](https://www.embitz.org/).   Blinking the 4 LEDs [modified and used this article](../User Manuals/isildak_en.pdf) and [used this article](http://www.firmcodes.com/stm32f407-discovery-gpio-tu) to get it working.   
-Flashed using [ST-Link Utility](http://www.st.com/en/development-tools/stsw-link004.html). 
+---
+## Source Files:  
 
 >I left all the autoconfigured standard libraries so the project could be used as a template.  
 
----  
-Hex file for flashing to board:  
-/STM32F407Disco/bin/Release/STM32F407Disco.hex  
-Manually added these files:  
+**Hex file for flashing to board:**  
+/STM32F407Disco/bin/Release/STM32F407Disco.hex 
+
+**Manually added these files:**  
 /STM32F407Disco/Delay/fm_stm32f4_Delay.c  
 /STM32F407Disco/Delay/fm_stm32f4_Delay.h  
 /STM32F407Disco/LED/fm_stm32f4_led.c  
@@ -25,7 +36,6 @@ Manually added these files:
 
 
 ---
-
 ## Usefull Links:  
 [STM32F4-Discovery](http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1848/PF252419?s_searchtype=partnumber)  
 [Getting Started](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/user_manual/DM00037368.pdf)  
@@ -40,6 +50,5 @@ Manually added these files:
 
 
 ---
-
 ## About EmBitz IDE:  
 [EmBitz IDE](https://www.embitz.org/) is a free IDE that can be used to do ARM, AVR, PIC, MSP430 and other development. It is natively written in C++ and is fast. It is a full featured IDE that can import projects from amongst others, Keil/ARM Realview, ARM GCC, MSPGCC, PIC32 Microchip, PIC24,PIC30,dsPIC Microchip, PIC18 Microchip, AVR GCC etc. It has a Special tailored GDB binaries optimized for embedded debugging and a whole lot of other features. Do yourself a favour and download it and try it out. It was the quickest and most featured free STM32 Development Environment I got working in a small amount of time after I struggled for days not succeeding with Eclipse based IDEs.  
